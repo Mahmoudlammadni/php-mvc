@@ -5,7 +5,16 @@
     <title>Greeting</title>
 </head>
 <body>
-    <h1><?php echo $message; ?></h1>
+<?php
+$m = "";
+if (!empty($message)) {
+    $m = $message;
+} elseif (!empty($mes)) {
+    $m = $mes;
+}
+?>
+
+    <h1><?php echo $m; ?></h1>
     <a href="index.php">Go back</a>
 </body>
 </html>
