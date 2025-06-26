@@ -1,5 +1,5 @@
 <?php
- require_once "../controller/GrettingController.php";
+ require_once "../controller/GreetingController.php";
 $controller = new GreetingController();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ok'])) {
